@@ -1,0 +1,17 @@
+@page
+@model MyPortfolio.Pages.ProjectsModel
+@{
+    ViewData["Title"] = "Projects";
+}
+
+<h1>Projects</h1>
+<ul>
+    @foreach (var project in Model.Projects)
+    {
+        <li>
+            <strong>@project.Title</strong>: @project.Description
+            <br />
+            <a href="@project.Url" target="_blank">View Project</a>
+        </li>
+    }
+</ul>

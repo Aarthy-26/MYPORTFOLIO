@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Aarthy's Portfolio</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        /* Reset and basic styling */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        /* Header and Navigation Styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5em 5%;
+            background-color: #333;
+            color: #fff;
+        }
+
+        header .brand {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2em;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1em;
+        }
+
+        nav ul li a:hover {
+            color: #ffca28;
+            border-bottom: 2px solid #ffca28;
+        }
+
+        /* Main Content Styling */
+        main {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="brand">Aarthy's Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/About">About</a></li>
+                <li><a href="/Projects">Projects</a></li>
+                <li><a href="/Contact">Contact</a></li>
+                <li><a href="/Privacy">Privacy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Aarthy. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

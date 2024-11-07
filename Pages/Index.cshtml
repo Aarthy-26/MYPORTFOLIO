@@ -1,0 +1,87 @@
+﻿@page
+@model MyPortfolio.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- Main Content Area -->
+<div class="container">
+    <!-- Profile Section -->
+    <section class="intro">
+        <img src="@Url.Content("~/images/profile.png")" alt="Profile Image" class="profile-img">
+        <h1>Aarthy J R</h1>
+        <p class="profession">Aspiring Data Scientist & Developer</p>
+        <p class="description">
+            Hi! I'm Aarthy, passionate about leveraging data science and analytics to create meaningful insights.
+            Explore my projects, learn more about my skills, and feel free to connect!
+        </p>
+        <div class="buttons">
+            <a href="/About" class="btn">About Me</a>
+            <a href="/Projects" class="btn">Projects</a>
+            <a href="/Contact" class="btn">Contact</a>
+        </div>
+    </section>
+</div>
+
+<!-- Styling for the Index Page -->
+<style>
+    .container {
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .intro {
+        background-color: #fff;
+        padding: 2em;
+        border-radius: 10px;
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        margin-top: 2em;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin: 0 auto 1em;
+    }
+
+    h1 {
+        font-size: 2.5em;
+        color: #333;
+    }
+
+    .profession {
+        font-size: 1.2em;
+        color: #666;
+        margin: 0.5em 0;
+    }
+
+    .description {
+        font-size: 1.1em;
+        color: #555;
+        margin-top: 1em;
+    }
+
+    .buttons {
+        margin-top: 1.5em;
+        display: flex;
+        gap: 1em;
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 0.8em 1.5em;
+        font-size: 1em;
+        color: #fff;
+        background-color: #333;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background 0.3s;
+    }
+
+    .btn:hover {
+        background-color: #ffca28;
+    }
+</style>

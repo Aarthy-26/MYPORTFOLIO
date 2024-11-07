@@ -1,0 +1,14 @@
+@page
+@model MyPortfolio.Pages.AboutModel
+@{
+    ViewData["Title"] = "About";
+}
+
+<h1>About Me</h1>
+<p>Here are some of my skills:</p>
+<ul>
+    @foreach (var skill in Model.Skills)
+    {
+        <li>@skill.Name - @skill.Level</li>
+    }
+</ul>
